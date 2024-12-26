@@ -2,13 +2,13 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 def platform(request):
-    return render(request, 'Home.html')
+    return render(request, 'third_task/Home.html')
 
 def shop(request):
-    return render(request, 'shop.html')
+    return render(request, 'third_task/fourth_task/shop.html')
 
 def shopping_cart(request):
-    return render(request, 'shopping_cart.html')
+    return render(request, 'third_task/shopping_cart.html')
 
 
 def game(request):
@@ -20,5 +20,5 @@ def game(request):
         'game_2': game_2,
         'game_3': game_3,
     }
-    return render(request,'shop.html', context)
+    return render(request,'third_task/shop.html', context)
 # Create your views here.
