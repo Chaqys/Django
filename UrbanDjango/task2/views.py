@@ -6,3 +6,4 @@ def func_temp(request):
 class class_temp(TemplateView):
     template_name = 'class_template.html'
 # Create your views here.
+git
