@@ -18,13 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import class_temp, func_temp
 from task4.views import platform, game, shopping_cart
+from task5.views import sign_up_by_html, sign_up_by_django
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("html_forms/", sign_up_by_html),
+    path("django_forms/", sign_up_by_django),
     # path('function/', func_temp),
     # path('class/', class_temp.as_view()),
-    path('platform/', platform),
-    path('platform/games/', game),
-    path('platform/cart/', shopping_cart),
+    # path('platform/', platform),
+    # path('platform/games/', game),
+    # path('platform/cart/', shopping_cart),
 ]
